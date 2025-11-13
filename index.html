@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orange - Interactive Pages</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jacquard+12&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Controls -->
+    <nav class="nav-controls">
+        <button class="nav-btn" data-page="1">1</button>
+        <button class="nav-btn" data-page="2">2</button>
+        <button class="nav-btn" data-page="3">3</button>
+    </nav>
+
+    <!-- Page 1: Large Housefly -->
+    <div class="page active" id="page1" data-name="pg1">
+        <div class="house-fly-lg">
+            <img src="https://www.figma.com/api/mcp/asset/36b0d3b8-ea42-4483-bf6c-80beda0750f1" alt="Large Housefly">
+        </div>
+        <a href="#page2" class="page-text" data-page-link="2">
+            <p>text test</p>
+        </a>
+    </div>
+
+    <!-- Page 2: Brown Background -->
+    <div class="page" id="page2" data-name="pg2">
+        <a href="#page3" class="page-text" data-page-link="3">
+            <p>text test</p>
+        </a>
+    </div>
+
+    <!-- Page 3: Small Housefly + Drawing -->
+    <div class="page" id="page3" data-name="pg3">
+        <div class="drawing">
+            <img src="https://www.figma.com/api/mcp/asset/47be17dd-2802-4d3d-8476-9c504d7eec74" alt="Drawing">
+        </div>
+        <a href="#page1" class="page-text" data-page-link="1">
+            <p>text test</p>
+        </a>
+        <div class="house-fly-sm">
+            <img src="https://www.figma.com/api/mcp/asset/009275fa-e36f-463d-a735-e12452cea327" alt="Small Housefly">
+        </div>
+    </div>
+
+    <!-- Keyboard Navigation Hint -->
+    <div class="keyboard-hint">
+        Use arrow keys ← → or click text to navigate
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
